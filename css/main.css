@@ -1,0 +1,117 @@
+:root {
+    --color: rgb(170, 255, 170);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.grid {
+    display: grid;
+    /* padding: 10px; */
+    /* height: 100vh; */
+    /* width: 100vw; */
+    /* background-color: rgb(255, 0, 0); */
+    /* grid-template-rows: 100px 100px 100px;
+    grid-template-columns: 100px 100px 100px; */
+    /* grid-template-columns: repeat(3, 1fr); */
+    /* grid-template-rows: repeat(4, 1fr); */
+    grid-template-columns: 1fr 3.5fr 1fr;
+    grid-template-rows: 70px 1fr 1fr 1fr 50px;
+    /* row-gap: 2px;
+    column-gap: 2px; */
+}
+
+.grid-item {
+    /* border: 1px solid gray; */
+    /* background-color: black; */
+    background-color: rgb(231, 231, 231);
+    /* color: white; */
+}
+
+.header {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(170, 170, 170);
+}
+
+#logo {
+    margin-left: 20px;
+    font-size: 3rem;
+}
+
+.header-links {
+    margin: 0 20px;
+}
+
+.header-links .link {
+    font-size: 1.3rem;
+    margin: 0 10px;
+    text-decoration: none;
+    color: black;
+}
+
+.header-links .link:hover {
+    color: white;
+}
+
+.left {
+    grid-row: 2 /span 3;
+    justify-self: right;
+    max-width: 180px;
+    margin: 20px;
+    padding: 2vw;
+}
+
+.right {
+    grid-row: 2 /span 3;
+    justify-self: left;
+    max-width: 180px;
+    margin: 20px;
+    padding: 20px;
+}
+
+.middle {
+    grid-row: 2 /span 3;
+    font-size: 1.5vw;
+    padding: 50px;
+}
+
+.middle p {
+    font-size: 4vw;
+    line-height: 150px;
+}
+
+.footer {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: black;
+}
+
+.footer-links {
+    margin: 0 10px;
+    cursor: default;
+}
+
+#copyright {
+    margin: 20px;
+    color: white;
+}
+
+.footer-links .link {
+    font-size: 1rem;
+    margin: 0 8px;
+    text-decoration: none;
+    color: white;
+}
+
+.footer-links .link:hover {
+    color: gray;
+}
